@@ -81,6 +81,7 @@ export interface WeddingConfig {
     title: string;
     artist: string;
     url: string; // audio source URL or synthesized audio
+    youtubeId?: string;
   };
   videoTeaser: {
     title: string;

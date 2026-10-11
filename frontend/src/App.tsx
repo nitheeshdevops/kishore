@@ -14,11 +14,15 @@ import { FamilyBlessings } from './components/FamilyBlessings/FamilyBlessings';
 import { GuestWishes } from './components/GuestWishes/GuestWishes';
 import { FinalScene } from './components/FinalScene/FinalScene';
 import { ConfigDrawer } from './components/ConfigDrawer/ConfigDrawer';
+import { BackgroundAudioBridge } from './components/Audio/BackgroundAudioBridge';
 import './App.css';
 
 const MainApp: React.FC = () => {
   return (
     <div className="relative min-h-screen bg-[#1F070E] text-[#FFF8EF] overflow-x-hidden selection:bg-[#D8B779] selection:text-[#351018]">
+      {/* Invisible YouTube Audio Stream Bridge (Official Wedding Song) */}
+      <BackgroundAudioBridge />
+
       {/* 3D Cinematic Opening Sequence (Skippable & Replayable) */}
       <CinematicIntro />
 

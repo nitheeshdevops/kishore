@@ -31,21 +31,21 @@ export const defaultWeddingConfig: WeddingConfig = {
   subtagline: 'Two hearts, one promise. A lifetime of love. Forever & Always.',
   invitationNote: 'With the blessings of our parents and loved ones, we invite you to join us as we celebrate the sacred union of Kishore & Shrika.',
   
-  // Audio configuration
+  // Audio configuration (YouTube song: Chiri Thottu / InspireStudio Love Tone)
   audioTrack: {
-    title: 'InspireStudio Wedding Love Tone (Romantic Instrumental)',
-    artist: 'Inspire Studio InviCreator — Official Wedding Invite Song',
+    title: 'InspireStudio Wedding Love Tone (Chiri Thottu)',
+    artist: 'Justin Prabhakaran & Chinmayi Sripada (Official Invite Song)',
     url: 'https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3?filename=romantic-piano-112199.mp3',
+    youtubeId: 'FWH-fg0ZW-o',
   },
 
-  // Video teaser configuration (InspireStudio Pre-Wedding Film)
+  // Video teaser configuration (Exclusive Kishore & Shrika Cinematic Film)
   videoTeaser: {
     title: 'KISHORE & SHRIKA — The Pre-Wedding Film',
-    subtitle: 'Official Cinematic Wedding Invitation Film & Romantic Love Tone',
+    subtitle: 'An Exclusive Cinematic Film Featuring Kishore & Shrika with Official Wedding Song',
     youtubeId: 'FWH-fg0ZW-o',
-    videoUrl: 'https://www.youtube-nocookie.com/embed/FWH-fg0ZW-o',
     posterUrl: '/images/kishore_shrika_dunes_sunset.png',
-    duration: '1:12 MINS',
+    duration: '1:13 MINS',
   },
 
   shareMessage: 'You are cordially invited to celebrate the union of Kishore G and Shrika Arul A! Step into our 3D love story.',
