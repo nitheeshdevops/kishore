@@ -92,17 +92,20 @@ export const CinematicHero: React.FC = () => {
           transition={{ duration: 1, delay: 0.4 }}
           className="flex items-center justify-center gap-2 sm:gap-6 my-4 sm:my-6"
         >
-          {/* Kishore Candid Frame */}
-          <div className="group relative w-16 sm:w-24 h-20 sm:h-32 rounded-2xl overflow-hidden p-1 glass-wine border border-gold-champagne/40 shadow-gold-glow transform -rotate-3 hover:rotate-0 hover:scale-105 transition-all duration-300">
+          {/* Left: Desert Dunes Sunset Couture */}
+          <div className="group relative w-20 sm:w-28 h-28 sm:h-40 rounded-2xl overflow-hidden p-1 glass-wine border border-gold-champagne/50 shadow-gold-glow transform -rotate-3 hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer">
             <img
-              src="/images/kishore_shrika_candid.png"
-              alt="Kishore & Shrika"
-              className="w-full h-full object-cover rounded-xl"
+              src="/images/kishore_shrika_dunes.png"
+              alt="Kishore & Shrika Desert Sunset"
+              className="w-full h-full object-cover rounded-xl group-hover:scale-110 transition-transform duration-500"
             />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#1F070E]/80 via-transparent to-transparent flex items-end justify-center pb-1">
+              <span className="text-[8px] sm:text-[9px] uppercase tracking-wider text-gold-champagne font-bold">Sunset Vows</span>
+            </div>
           </div>
 
           {/* Central Crown Jewel: Royal Mandap Portrait */}
-          <div className="group relative w-32 sm:w-48 h-44 sm:h-64 rounded-t-full rounded-b-3xl overflow-hidden p-2 glass-burgundy border-2 border-gold-champagne shadow-gold-glow-lg transform scale-105 hover:scale-110 transition-all duration-500 cursor-pointer">
+          <div className="group relative w-32 sm:w-52 h-44 sm:h-64 rounded-t-full rounded-b-3xl overflow-hidden p-2 glass-burgundy border-2 border-gold-champagne shadow-gold-glow-lg transform scale-105 hover:scale-110 transition-all duration-500 cursor-pointer">
             <img
               src="/images/kishore_shrika_royal.png"
               alt="Kishore G & Shrika Arul A — Royal Wedding Mandap"
@@ -120,13 +123,16 @@ export const CinematicHero: React.FC = () => {
             </div>
           </div>
 
-          {/* Shrika Arch Frame */}
-          <div className="group relative w-16 sm:w-24 h-20 sm:h-32 rounded-2xl overflow-hidden p-1 glass-wine border border-gold-champagne/40 shadow-gold-glow transform rotate-3 hover:rotate-0 hover:scale-105 transition-all duration-300">
+          {/* Right: Sacred Fire Agni Phere */}
+          <div className="group relative w-20 sm:w-28 h-28 sm:h-40 rounded-2xl overflow-hidden p-1 glass-wine border border-gold-champagne/50 shadow-gold-glow transform rotate-3 hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer">
             <img
-              src="/images/kishore_shrika_arch.png"
-              alt="Shrika & Kishore"
-              className="w-full h-full object-cover rounded-xl"
+              src="/images/kishore_shrika_fire.png"
+              alt="Kishore & Shrika Sacred Fire Vows"
+              className="w-full h-full object-cover rounded-xl group-hover:scale-110 transition-transform duration-500"
             />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#1F070E]/80 via-transparent to-transparent flex items-end justify-center pb-1">
+              <span className="text-[8px] sm:text-[9px] uppercase tracking-wider text-gold-champagne font-bold">Agni Phere</span>
+            </div>
           </div>
         </motion.div>
 

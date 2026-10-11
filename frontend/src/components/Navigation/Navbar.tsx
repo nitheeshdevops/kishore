@@ -51,7 +51,7 @@ export const Navbar: React.FC = () => {
       <header
         className={`fixed top-0 left-0 right-0 z-40 transition-all duration-500 ${
           isScrolled
-            ? 'glass-burgundy py-3 shadow-burgundy-deep'
+            ? 'bg-[#1F070E]/98 backdrop-blur-2xl border-b border-gold-champagne/35 py-3 shadow-burgundy-deep'
             : 'bg-gradient-to-b from-[#1F070E]/90 via-[#1F070E]/40 to-transparent py-5'
         }`}
       >
