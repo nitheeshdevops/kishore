@@ -193,6 +193,23 @@ export const CinematicIntro: React.FC = () => {
                 </motion.div>
               </div>
 
+              {/* Royal Mandap Portrait Reveal in Cinematic Intro */}
+              <motion.div
+                initial={{ opacity: 0, scale: 0.85 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 1.2, delay: 0.5 }}
+                className="flex justify-center"
+              >
+                <div className="relative w-28 sm:w-36 h-36 sm:h-44 rounded-full sm:rounded-t-full overflow-hidden p-1 glass-burgundy border-2 border-gold-champagne shadow-gold-glow-lg">
+                  <img
+                    src="/images/kishore_shrika_royal.png"
+                    alt="Kishore G & Shrika Arul A Royal Union"
+                    className="w-full h-full object-cover rounded-full sm:rounded-t-full transform hover:scale-110 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#1F070E]/70 via-transparent to-transparent pointer-events-none" />
+                </div>
+              </motion.div>
+
               {/* Subheading & Configurable Date */}
               <motion.div
                 initial={{ opacity: 0 }}

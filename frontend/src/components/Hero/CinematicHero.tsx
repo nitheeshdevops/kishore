@@ -90,10 +90,10 @@ export const CinematicHero: React.FC = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.4 }}
-          className="flex items-center justify-center gap-3 sm:gap-6 my-4"
+          className="flex items-center justify-center gap-2 sm:gap-6 my-4 sm:my-6"
         >
-          {/* Kishore Portrait Frame */}
-          <div className="group relative w-16 sm:w-20 h-20 sm:h-24 rounded-2xl overflow-hidden p-1 glass-wine border border-gold-champagne/40 shadow-gold-glow transform -rotate-3 hover:rotate-0 transition-transform duration-300">
+          {/* Kishore Candid Frame */}
+          <div className="group relative w-16 sm:w-24 h-20 sm:h-32 rounded-2xl overflow-hidden p-1 glass-wine border border-gold-champagne/40 shadow-gold-glow transform -rotate-3 hover:rotate-0 hover:scale-105 transition-all duration-300">
             <img
               src="/images/kishore_shrika_candid.png"
               alt="Kishore & Shrika"
@@ -101,20 +101,27 @@ export const CinematicHero: React.FC = () => {
             />
           </div>
 
-          {/* Central Royal Mandap Badge */}
-          <div className="group relative w-20 sm:w-28 h-24 sm:h-32 rounded-3xl overflow-hidden p-1.5 glass-burgundy border-2 border-gold-champagne shadow-gold-glow-lg transform scale-105 hover:scale-110 transition-transform duration-300">
+          {/* Central Crown Jewel: Royal Mandap Portrait */}
+          <div className="group relative w-32 sm:w-48 h-44 sm:h-64 rounded-t-full rounded-b-3xl overflow-hidden p-2 glass-burgundy border-2 border-gold-champagne shadow-gold-glow-lg transform scale-105 hover:scale-110 transition-all duration-500 cursor-pointer">
             <img
               src="/images/kishore_shrika_royal.png"
-              alt="Kishore & Shrika Royal Vows"
-              className="w-full h-full object-cover rounded-2xl"
+              alt="Kishore G & Shrika Arul A — Royal Wedding Mandap"
+              className="w-full h-full object-cover rounded-t-full rounded-b-2xl group-hover:scale-105 transition-transform duration-700"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#1F070E]/80 via-transparent to-transparent flex items-end justify-center pb-1">
-              <span className="text-[9px] uppercase tracking-widest text-gold-champagne font-bold">Forever</span>
+            {/* Ornate Gold Crown Tag */}
+            <div className="absolute top-2 left-1/2 -translate-x-1/2 px-2.5 py-0.5 rounded-full bg-gold-champagne/90 text-[#2C1B1B] text-[9px] sm:text-[10px] uppercase font-bold tracking-widest shadow-sm">
+              Royal Mandap
+            </div>
+            {/* Gradient Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-t from-[#1F070E]/85 via-transparent to-transparent flex items-end justify-center pb-2">
+              <span className="text-[10px] sm:text-xs uppercase tracking-[0.2em] text-gold-champagne font-bold drop-shadow">
+                June 10, 2032
+              </span>
             </div>
           </div>
 
-          {/* Shrika Portrait Frame */}
-          <div className="group relative w-16 sm:w-20 h-20 sm:h-24 rounded-2xl overflow-hidden p-1 glass-wine border border-gold-champagne/40 shadow-gold-glow transform rotate-3 hover:rotate-0 transition-transform duration-300">
+          {/* Shrika Arch Frame */}
+          <div className="group relative w-16 sm:w-24 h-20 sm:h-32 rounded-2xl overflow-hidden p-1 glass-wine border border-gold-champagne/40 shadow-gold-glow transform rotate-3 hover:rotate-0 hover:scale-105 transition-all duration-300">
             <img
               src="/images/kishore_shrika_arch.png"
               alt="Shrika & Kishore"
