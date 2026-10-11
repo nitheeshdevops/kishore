@@ -33,18 +33,19 @@ export const defaultWeddingConfig: WeddingConfig = {
   
   // Audio configuration
   audioTrack: {
-    title: 'A Thousand Whispers of Eternity',
-    artist: 'Cinematic Orchestral Serenade',
+    title: 'InspireStudio Wedding Love Tone (Romantic Instrumental)',
+    artist: 'Inspire Studio InviCreator — Official Wedding Invite Song',
     url: 'https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3?filename=romantic-piano-112199.mp3',
   },
 
-  // Video teaser configuration
+  // Video teaser configuration (InspireStudio Pre-Wedding Film)
   videoTeaser: {
     title: 'KISHORE & SHRIKA — The Pre-Wedding Film',
-    subtitle: 'A glimpse into our moments of laughter, whispered promises, and timeless romance',
-    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4',
-    posterUrl: '/images/kishore_shrika_fire.png',
-    duration: '3:45 MINS',
+    subtitle: 'Official Cinematic Wedding Invitation Film & Romantic Love Tone',
+    youtubeId: 'FWH-fg0ZW-o',
+    videoUrl: 'https://www.youtube-nocookie.com/embed/FWH-fg0ZW-o',
+    posterUrl: '/images/kishore_shrika_dunes_sunset.png',
+    duration: '1:12 MINS',
   },
 
   shareMessage: 'You are cordially invited to celebrate the union of Kishore G and Shrika Arul A! Step into our 3D love story.',
@@ -93,7 +94,7 @@ export const defaultWeddingConfig: WeddingConfig = {
       subtitle: 'Save The Date — June 10, 2032',
       description: 'Against the cinematic desert dunes bathed in champagne sunlight, Kishore and Shrika sealed their eternal promise. A vow etched in the sands of time.',
       location: 'The Sunlit Dunes',
-      imageUrl: '/images/kishore_shrika_dunes.png',
+      imageUrl: '/images/kishore_shrika_dunes_sunset.png',
       quote: '"Two hearts, one promise. A lifetime of love. Forever & Always."',
     },
     {
@@ -122,6 +123,15 @@ export const defaultWeddingConfig: WeddingConfig = {
 
   // Pre-Wedding Photo Gallery with Complete Real Couple Photos
   gallery: [
+    {
+      id: 'photo-sunset-couture',
+      title: 'Desert Sunset Couture & Eternal Vows',
+      category: 'editorial',
+      imageUrl: '/images/kishore_shrika_dunes_sunset.png',
+      aspectRatio: 'portrait',
+      caption: 'Kishore & Shrika in couture black amidst golden desert dunes at sunset — timeless elegance under the warm amber sky.',
+      location: 'The Sunset Dunes',
+    },
     {
       id: 'photo-1',
       title: 'The Seven Sacred Steps (Saptapadi)',

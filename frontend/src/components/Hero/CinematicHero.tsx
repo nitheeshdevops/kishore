@@ -93,15 +93,18 @@ export const CinematicHero: React.FC = () => {
           className="flex items-center justify-center gap-2 sm:gap-6 my-4 sm:my-6"
         >
           {/* Left: Desert Dunes Sunset Couture */}
-          <div className="group relative w-20 sm:w-28 h-28 sm:h-40 rounded-2xl overflow-hidden p-1 glass-wine border border-gold-champagne/50 shadow-gold-glow transform -rotate-3 hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer">
+          <div className="group relative w-20 sm:w-28 h-28 sm:h-40 rounded-2xl overflow-hidden p-1 glass-wine border border-gold-champagne/60 shadow-[0_0_20px_rgba(216,183,121,0.35)] transform -rotate-3 hover:rotate-0 hover:scale-110 transition-all duration-300 cursor-pointer">
             <img
-              src="/images/kishore_shrika_dunes.png"
-              alt="Kishore & Shrika Desert Sunset"
-              className="w-full h-full object-cover rounded-xl group-hover:scale-110 transition-transform duration-500"
+              src="/images/kishore_shrika_dunes_sunset.png"
+              alt="Kishore & Shrika Desert Sunset Vows"
+              className="w-full h-full object-cover rounded-xl group-hover:scale-115 transition-transform duration-700"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#1F070E]/80 via-transparent to-transparent flex items-end justify-center pb-1">
-              <span className="text-[8px] sm:text-[9px] uppercase tracking-wider text-gold-champagne font-bold">Sunset Vows</span>
+            {/* Animated Sun Flare Light Leak */}
+            <div className="absolute inset-0 bg-gradient-to-t from-[#1F070E]/85 via-transparent to-transparent flex items-end justify-center pb-1">
+              <span className="text-[8px] sm:text-[9px] uppercase tracking-wider text-gold-champagne font-bold drop-shadow">Sunset Vows</span>
             </div>
+            {/* Pulsing Sunbeam Glow */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-gold-champagne/30 rounded-full blur-md animate-pulse pointer-events-none" />
           </div>
 
           {/* Central Crown Jewel: Royal Mandap Portrait */}

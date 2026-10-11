@@ -4,8 +4,9 @@ import { CinematicIntro } from './components/CinematicIntro/CinematicIntro';
 import { Navbar } from './components/Navigation/Navbar';
 import { CinematicHero } from './components/Hero/CinematicHero';
 import { StoryTimeline } from './components/StoryTimeline/StoryTimeline';
-import { PhotoGallery } from './components/PhotoGallery/PhotoGallery';
 import { RingExchange } from './components/RingExchange/RingExchange';
+import { SunsetSpotlight } from './components/SunsetSpotlight/SunsetSpotlight';
+import { PhotoGallery } from './components/PhotoGallery/PhotoGallery';
 import { CinematicFilm } from './components/CinematicFilm/CinematicFilm';
 import { Countdown } from './components/Countdown/Countdown';
 import { WeddingEvents } from './components/WeddingEvents/WeddingEvents';
@@ -36,6 +37,9 @@ const MainApp: React.FC = () => {
         <div id="ring-exchange">
           <RingExchange />
         </div>
+
+        {/* Desert Sunset Couture Spotlight (Interactive 3D Tilt & Sunbeam Flare) */}
+        <SunsetSpotlight />
 
         {/* Pre-Wedding Photo Gallery */}
         <PhotoGallery />

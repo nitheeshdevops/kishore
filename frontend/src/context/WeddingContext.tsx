@@ -8,6 +8,8 @@ interface WeddingContextType {
   resetConfig: () => void;
   isPlayingMusic: boolean;
   toggleMusic: () => void;
+  pauseMusic: () => void;
+  playMusic: () => void;
   hasEnteredStory: boolean;
   setHasEnteredStory: (entered: boolean) => void;
   isIntroActive: boolean;
@@ -21,7 +23,7 @@ interface WeddingContextType {
 
 const WeddingContext = createContext<WeddingContextType | undefined>(undefined);
 
-const STORAGE_KEY = 'kishore_shrika_wedding_v3';
+const STORAGE_KEY = 'kishore_shrika_wedding_v4';
 
 export const WeddingProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [config, setConfig] = useState<WeddingConfig>(() => {
@@ -70,6 +72,23 @@ export const WeddingProvider: React.FC<{ children: React.ReactNode }> = ({ child
     }
   };
 
+  const pauseMusic = () => {
+    if (audioElement && isPlayingMusic) {
+      audioElement.pause();
+      setIsPlayingMusic(false);
+    }
+  };
+
+  const playMusic = () => {
+    if (audioElement && !isPlayingMusic) {
+      audioElement.play().then(() => {
+        setIsPlayingMusic(true);
+      }).catch((err) => {
+        console.warn('Audio play failed or was blocked by browser policy:', err);
+      });
+    }
+  };
+
   const updateConfig = (updater: (prev: WeddingConfig) => WeddingConfig) => {
     setConfig((prev) => {
       const next = updater(prev);
@@ -110,6 +129,8 @@ export const WeddingProvider: React.FC<{ children: React.ReactNode }> = ({ child
         resetConfig,
         isPlayingMusic,
         toggleMusic,
+        pauseMusic,
+        playMusic,
         hasEnteredStory,
         setHasEnteredStory,
         isIntroActive,

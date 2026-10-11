@@ -86,6 +86,7 @@ export interface WeddingConfig {
     title: string;
     subtitle: string;
     videoUrl?: string;
+    youtubeId?: string;
     posterUrl: string;
     duration: string;
   };
