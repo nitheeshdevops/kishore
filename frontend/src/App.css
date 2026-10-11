@@ -1,0 +1,46 @@
+/* Custom styling overrides and fine-tuned animations for Kishore Pre-Wedding Experience */
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+/* Shimmer overlay effect */
+.gold-shimmer-sweep {
+  position: relative;
+  overflow: hidden;
+}
+
+.gold-shimmer-sweep::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    60deg,
+    transparent 35%,
+    rgba(255, 248, 239, 0.25) 50%,
+    transparent 65%
+  );
+  transform: rotate(25deg) translateY(-100%);
+  animation: sweepLight 7s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes sweepLight {
+  0%, 60% {
+    transform: rotate(25deg) translateY(-120%);
+  }
+  100% {
+    transform: rotate(25deg) translateY(120%);
+  }
+}

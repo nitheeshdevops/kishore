@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-midnight-burgundy: #351018;
+  --color-royal-wine: #641B2B;
+  --color-champagne-gold: #D8B779;
+  --color-warm-ivory: #FFF8EF;
+  --color-blush-rose: #EBC3C5;
+  --color-antique-rose: #B66B78;
+  --color-deep-cocoa: #2C1B1B;
+  --color-gold-light: #F7E7C4;
+  --color-gold-dark: #A37A33;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Inter', system-ui, sans-serif;
+    color: var(--color-warm-ivory);
+    background-color: #1F070E;
+  }
+
+  body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+  }
+
+  /* Custom Romantic Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #1F070E;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #641B2B, #D8B779, #641B2B);
+    border-radius: 4px;
+    border: 1px solid rgba(216, 183, 121, 0.3);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, #D8B779, #F7E7C4, #D8B779);
+  }
+}
+
+/* Luxurious Gold Text Gradient */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #FDF3DB 0%, #D8B779 45%, #C2964C 75%, #F7E7C4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gold-shimmer {
+  background: linear-gradient(
+    90deg,
+    #C2964C 0%,
+    #FDF3DB 25%,
+    #D8B779 50%,
+    #FDF3DB 75%,
+    #C2964C 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: goldShimmer 6s linear infinite;
+}
+
+.text-rose-gradient {
+  background: linear-gradient(135deg, #FFF8EF 0%, #EBC3C5 50%, #B66B78 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Luxury Glassmorphism */
+.glass-burgundy {
+  background: rgba(53, 16, 24, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(216, 183, 121, 0.22);
+}
+
+.glass-wine {
+  background: rgba(100, 27, 43, 0.55);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(216, 183, 121, 0.2);
+}
+
+.glass-ivory {
+  background: rgba(255, 248, 239, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(216, 183, 121, 0.35);
+  color: #2C1B1B;
+}
+
+.gold-border {
+  border: 1px solid rgba(216, 183, 121, 0.35);
+  box-shadow: 0 0 15px rgba(216, 183, 121, 0.15);
+}
+
+.gold-border-glow {
+  border: 1px solid rgba(216, 183, 121, 0.65);
+  box-shadow: 0 0 25px rgba(216, 183, 121, 0.3), inset 0 0 15px rgba(216, 183, 121, 0.1);
+}
+
+/* Floating animation */
+@keyframes goldShimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+@keyframes gentleDrift {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1.5deg);
+  }
+}
+
+.animate-gentle-drift {
+  animation: gentleDrift 5s ease-in-out infinite;
+}
+
+/* Luxury Vignette & Grain */
+.cinematic-vignette {
+  background: radial-gradient(circle at center, transparent 40%, rgba(15, 3, 7, 0.82) 100%);
+  pointer-events: none;
+}
+
+/* Filigree line */
+.filigree-line {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(216, 183, 121, 0.8), transparent);
+}
