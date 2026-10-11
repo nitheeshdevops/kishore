@@ -8,6 +8,7 @@ import {
   Maximize2,
   Minimize2,
   MapPin,
+  Sparkles,
 } from 'lucide-react';
 import { useWedding } from '../../context/WeddingContext';
 import type { GalleryPhoto } from '../../types';
@@ -141,6 +142,14 @@ export const PhotoGallery: React.FC = () => {
 
                   {/* Gradient Vignette */}
                   <div className="absolute inset-0 bg-gradient-to-t from-[#1F070E] via-[#1F070E]/20 to-transparent opacity-60 group-hover:opacity-85 transition-opacity duration-300" />
+
+                  {/* Masterpiece Floating Badge for Premier Portraits */}
+                  {(photo.id === 'photo-double-exposure' || photo.id === 'photo-sunset-couture') && (
+                    <div className="absolute top-3 left-3 z-10 px-2.5 py-1 rounded-full bg-black/65 backdrop-blur-md border border-gold-champagne/60 text-[10px] text-gold-champagne font-bold uppercase tracking-wider flex items-center gap-1 shadow-gold-glow">
+                      <Sparkles className="w-3 h-3 text-gold-champagne animate-pulse" />
+                      <span>Masterpiece</span>
+                    </div>
+                  )}
 
                   {/* Hover Information Overlay */}
                   <div className="absolute inset-0 p-6 flex flex-col justify-end transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">

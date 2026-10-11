@@ -124,6 +124,15 @@ export const defaultWeddingConfig: WeddingConfig = {
   // Pre-Wedding Photo Gallery with Complete Real Couple Photos
   gallery: [
     {
+      id: 'photo-double-exposure',
+      title: 'Ocean Symphony — Ethereal Double Exposure',
+      category: 'editorial',
+      imageUrl: '/images/kishore_shrika_double_exposure.png',
+      aspectRatio: 'portrait',
+      caption: 'A poetic monochrome double exposure beneath open ocean skies — Kishore & Shrika standing back to back, united in spirit and infinity.',
+      location: 'Coastal Cliffs Promenade',
+    },
+    {
       id: 'photo-sunset-couture',
       title: 'Desert Sunset Couture & Eternal Vows',
       category: 'editorial',
@@ -158,15 +167,6 @@ export const defaultWeddingConfig: WeddingConfig = {
       aspectRatio: 'square',
       caption: 'Two hearts, one promise. Save the date — June 10, 2032.',
       location: 'Sunset Dunes',
-    },
-    {
-      id: 'photo-4',
-      title: 'Ethereal Double Exposure',
-      category: 'editorial',
-      imageUrl: '/images/kishore_shrika_dream.png',
-      aspectRatio: 'portrait',
-      caption: 'A poetic cinematic double exposure beneath the open ocean skies.',
-      location: 'Coastal Promenade',
     },
     {
       id: 'photo-5',
