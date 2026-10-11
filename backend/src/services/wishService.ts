@@ -7,12 +7,21 @@ const dataFilePath = path.join(__dirname, '../../wishes.json');
 
 const INITIAL_WISHES: WishModel[] = [
   {
+    id: 'wish-nitheesh',
+    name: 'Nitheesh',
+    relation: 'Best Friend & Brother',
+    message: '✨ Heavenly Grace & Eternal Love — Seeing my brother Kishore find his perfect half in Shrika is the greatest blessing! You two bring out the purest joy and radiance in each other. May your journey together be showered with boundless happiness, unwavering strength, and a love that deepens with every sunrise. Here is to your forever! 🥂💍',
+    createdAt: new Date().toISOString(),
+    likes: 48,
+    approved: true,
+  },
+  {
     id: 'wish-1',
     name: 'Vikram & Meera',
     relation: 'Close Friends',
-    message: '💍 Eternal Love — Wishing Kishore and his lovely bride a lifetime of endless adventures, laughter, and unbreakable bonds! You two are pure magic together.',
+    message: '💍 Eternal Love — Wishing Kishore and Shrika a lifetime of endless adventures, laughter, and unbreakable bonds! You two are pure magic together.',
     createdAt: new Date().toISOString(),
-    likes: 12,
+    likes: 18,
     approved: true,
   },
   {
