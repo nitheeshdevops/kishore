@@ -5,6 +5,7 @@ import { Navbar } from './components/Navigation/Navbar';
 import { CinematicHero } from './components/Hero/CinematicHero';
 import { StoryTimeline } from './components/StoryTimeline/StoryTimeline';
 import { PhotoGallery } from './components/PhotoGallery/PhotoGallery';
+import { RingExchange } from './components/RingExchange/RingExchange';
 import { CinematicFilm } from './components/CinematicFilm/CinematicFilm';
 import { Countdown } from './components/Countdown/Countdown';
 import { WeddingEvents } from './components/WeddingEvents/WeddingEvents';
@@ -30,6 +31,11 @@ const MainApp: React.FC = () => {
 
         {/* Our Story Timeline */}
         <StoryTimeline />
+
+        {/* 3D Sacred Ring Exchange Ceremony (20x Magic) */}
+        <div id="ring-exchange">
+          <RingExchange />
+        </div>
 
         {/* Pre-Wedding Photo Gallery */}
         <PhotoGallery />
