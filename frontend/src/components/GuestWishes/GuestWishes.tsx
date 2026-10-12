@@ -20,6 +20,14 @@ const INITIAL_WISHES: GuestWish[] = [
     likes: 48,
   },
   {
+    id: 'wish-kavika',
+    name: 'Kavika Sri',
+    relation: 'Cherished Friend',
+    message: '🌸 Boundless Joy & Grace — "When two beautiful souls find their true home in each other, every moment becomes poetry." Wishing dearest Kishore and Shrika a lifetime filled with radiant smiles, gentle peace, and unconditional love that grows more magical with every passing year! 💖✨',
+    createdAt: 'Recent Blessing',
+    likes: 38,
+  },
+  {
     id: 'wish-1',
     name: 'Vikram & Meera',
     relation: 'Close Friends',
@@ -49,7 +57,7 @@ export const GuestWishes: React.FC = () => {
 
   const [wishes, setWishes] = useState<GuestWish[]>(() => {
     try {
-      const stored = localStorage.getItem('kishore_guest_wishes_v2');
+      const stored = localStorage.getItem('kishore_guest_wishes_v3');
       if (stored) {
         return JSON.parse(stored);
       }
@@ -134,7 +142,7 @@ export const GuestWishes: React.FC = () => {
     const updated = [newWish, ...wishes];
     setWishes(updated);
     try {
-      localStorage.setItem('kishore_guest_wishes', JSON.stringify(updated));
+      localStorage.setItem('kishore_guest_wishes_v3', JSON.stringify(updated));
       savedSuccessfully = true;
     } catch {
       // ignore
@@ -170,7 +178,7 @@ export const GuestWishes: React.FC = () => {
     );
     setWishes(updated);
     try {
-      localStorage.setItem('kishore_guest_wishes', JSON.stringify(updated));
+      localStorage.setItem('kishore_guest_wishes_v3', JSON.stringify(updated));
     } catch {
       // ignore
     }

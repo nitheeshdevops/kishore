@@ -16,6 +16,15 @@ const INITIAL_WISHES: WishModel[] = [
     approved: true,
   },
   {
+    id: 'wish-kavika',
+    name: 'Kavika Sri',
+    relation: 'Cherished Friend',
+    message: '🌸 Boundless Joy & Grace — "When two beautiful souls find their true home in each other, every moment becomes poetry." Wishing dearest Kishore and Shrika a lifetime filled with radiant smiles, gentle peace, and unconditional love that grows more magical with every passing year! 💖✨',
+    createdAt: new Date().toISOString(),
+    likes: 38,
+    approved: true,
+  },
+  {
     id: 'wish-1',
     name: 'Vikram & Meera',
     relation: 'Close Friends',
